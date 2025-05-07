@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/reminder_list_fragment">
+
+    <fragment
+        android:id="@+id/reminder_list_fragment"
+        android:name="com.example.laba2.ReminderListFragment"
+        android:label="Список напоминаний">
+        <action
+            android:id="@+id/action_reminder_list_fragment_to_edit_list_fragment"
+            app:destination="@+id/edit_reminder_fragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/edit_reminder_fragment"
+        android:name="com.example.laba2.EditReminderFragment"
+        android:label="Редактирование напоминания">
+        <action
+            android:id="@+id/action_edit_list_fragment_to_reminder_list_fragment"
+            app:destination="@+id/reminder_list_fragment"
+            app:popUpTo="@id/reminder_list_fragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+    <action
+        android:id="@+id/action_global_to_edit"
+        app:destination="@id/edit_reminder_fragment" />
+
+</navigation>

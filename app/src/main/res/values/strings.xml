@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">laba2</string>
+    <string name="new_reminder_title">Создать напоминание</string>
+    <string name="title_hint">Введите заголово</string>
+    <string name="description_hint">Введите описание</string>
+    <string name="date_hint">Выберите дату напоминания</string>
+    <string name="time_hint">Выберите время напоминания</string>
+    <string name="save_reminder_button">Сохранить</string>
+    <string name="reminder_list_title">Напоминания</string>
+    <string name="add_reminder_button_description">Кнопка добавления напоминания</string>
+    <string name="delete_all_reminders_button">Удалить все напоминания</string>
+    <string name="edit_button_description">Редактировать</string>
+    <string name="delete_button_description">Удалить</string>
+    <string name="back_button">Назад</string>
+    <string name="new_reminder">Новое уведомление</string>
+    <string name="edit_reminder_title">Изменить напоминание</string>
+    <string name="choose_date_title">Выберите дату напоминания</string>
+    <string name="date_input_error">Поле даты не может быть пустым, если указано время</string>
+    <string name="title_input_error">Поле заголовка не может быть пустым</string>
+    <string name="add_reminder_snackbar">Напоминание успешно создано</string>
+    <string name="edit_reminder_snackbar">Напоминание успешно отредактировано</string>
+    <string name="delete_reminder_snackbar">Напоминание успешно удалено</string>
+    <string name="delete_all_reminders_snackbar">Все напоминания успешно удалены</string>
+    <string name="permission_warning">Вы не будете получать напоминания без разрешения на отправку уведомлений</string>
+</resources>

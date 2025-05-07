@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditReminderFragment">
+
+    <TextView
+        android:id="@+id/edit_reminder_title"
+        style="@style/Title"
+        android:text="@string/new_reminder_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/title_input"
+        android:inputType="text"
+        android:hint="@string/title_hint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_reminder_title"
+        style="@style/Input"/>
+
+    <EditText
+        android:id="@+id/description_input"
+        android:hint="@string/description_hint"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:minLines="5"
+        android:scrollbars="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_input"
+        style="@style/Input"/>
+
+    <EditText
+        android:id="@+id/date_input"
+        android:hint="@string/date_hint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_input"
+        android:focusable="false"
+        style="@style/Input"/>
+
+    <EditText
+        android:id="@+id/time_input"
+        android:hint="@string/time_hint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_input"
+        android:focusable="false"
+        style="@style/Input"/>
+
+    <Button
+        android:id="@+id/save_button"
+        android:text="@string/save_reminder_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        style="@style/Button"/>
+
+    <Button
+        android:id="@+id/back_button"
+        android:text="@string/back_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="30dp"
+        style="@style/Button"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

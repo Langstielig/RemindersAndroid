@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+
+    <style name="Input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">10</item>
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <item name="android:layout_marginTop">18dp</item>
+        <item name="android:layout_marginStart">18dp</item>
+        <item name="android:layout_marginEnd">18dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:background">@color/card_color</item>
+        <item name="android:padding">10dp</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:backgroundTint">@color/button_color</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="MyDatePicker" parent="ThemeOverlay.Material3.MaterialCalendar">
+        <item name="materialCalendarStyle">@style/MyDatePickerCard</item>
+        <item name="materialCalendarTheme">@style/MyDatePickerHeader</item>
+    </style>
+
+    <style name="MyDatePickerCard" parent="Widget.Material3.MaterialCalendar">
+        <item name="cardBackgroundColor">@color/card_color</item>
+    </style>
+
+    <style name="MyDatePickerHeader" parent="ThemeOverlay.Material3.MaterialCalendar.Fullscreen">
+        <item name="materialButtonStyle">@style/MyDatePickerButton</item>
+        <item name="android:textColorPrimary">@color/text_color</item>
+    </style>
+
+    <style name="MyDatePickerButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/background</item>
+    </style>
+</resources>
