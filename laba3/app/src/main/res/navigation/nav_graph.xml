@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/currentCurrencyFragment">
+
+    <fragment
+        android:id="@+id/currentCurrencyFragment"
+        android:name="com.example.laba3.currentCurrency.CurrentCurrencyFragment"
+        android:label="fragment_current_currency"
+        tools:layout="@layout/fragment_current_currency" >
+        <action
+            android:id="@+id/action_currentCurrencyFragment_to_historicalCurrencyFragment"
+            app:destination="@id/historicalCurrencyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historicalCurrencyFragment"
+        android:name="com.example.laba3.historicalCurrency.HistoricalCurrencyFragment"
+        android:label="fragment_historical_currency"
+        tools:layout="@layout/fragment_historical_currency" >
+
+        <argument
+            android:name="currencyName"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_historicalCurrencyFragment_to_currentCurrencyFragment"
+            app:destination="@+id/currentCurrencyFragment"/>
+    </fragment>
+</navigation>

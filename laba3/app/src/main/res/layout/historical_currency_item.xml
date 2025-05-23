@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/dark_grey">
+
+    <LinearLayout
+        style="@style/HorizontalLinearLayout">
+
+        <LinearLayout
+            style="@style/VerticalLinearLayout">
+
+            <TextView
+                android:text="@string/historical_currency_date"
+                style="@style/ItemText">
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="@string/historical_currency_rate"
+                style="@style/ItemText">
+            </TextView>
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"/>
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            style="@style/VerticalLinearLayout">
+
+            <TextView
+                android:id="@+id/historical_currency_date"
+                style="@style/ItemText">
+            </TextView>
+
+            <TextView
+                android:id="@+id/historical_currency_rate"
+                android:layout_marginTop="5dp"
+                style="@style/ItemText">
+            </TextView>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

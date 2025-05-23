@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">laba3</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="base_currency">Базовая валюта: %1$s</string>
+    <string name="historical_currency">Курс %1$s за последние дни</string>
+    <string name="currency_name">Название:</string>
+    <string name="currency_icon">Значок:</string>
+    <string name="currency_rate">Текущий курс:</string>
+    <string name="back_button">Вернуться назад</string>
+    <string name="historical_currency_date">Дата:</string>
+    <string name="historical_currency_rate">Курс:</string>
+    <string name="empty_body_error">Пустое тело ответа от сервера</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="network_error">Ошибка сети: </string>
+    <string name="unexpected_error">Непредвиденная ошибка: </string>
+</resources>
